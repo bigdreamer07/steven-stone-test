@@ -17,6 +17,11 @@ import TrustpilotLogo from '../../../assets/img/trustpilot.png';
 import NajLogo from '../../../assets/img/naj.png';
 import FeefoLogo from '../../../assets/img/feefo.png';
 
+import DekoLogo from '../../../assets/img/dekopay.png';
+import MastercardLogo from '../../../assets/img/mastercard.png';
+import AmericanExpressLogo from '../../../assets/img/american-express.png';
+import VisaLogo from '../../../assets/img/visa.png';
+
 const Items = {
   shopOnline: ["Privacy Policy", "Terms & Conditions", "Sitemap", "Shipping & Returns", "About Us", "Contact Us"],
   aboutUs: ["My Account", "My Shopping Cart", "My Wishlist", "Checkout", "Order Tracking", "Login / Register"],
@@ -110,17 +115,26 @@ const MobileFooter = () => {
       </div>
 
       <div className="footer-bottom">
-        <Slider {...settings}>
-          <img src={GoogleLogo} />
-          <img src={FeefoLogo} />
-          <img src={AssayLogo} />
-          <img src={NajLogo} />
-          <img src={FacebookLogo} />
-          <img src={TrustpilotLogo} />
-        </Slider>
+        <div className="advertise-slider">
+          <Slider {...settings}>
+            <img src={GoogleLogo} />
+            <img src={FeefoLogo} />
+            <img src={AssayLogo} />
+            <img src={NajLogo} />
+            <img src={FacebookLogo} />
+            <img src={TrustpilotLogo} />
+          </Slider>
+        </div>
 
-        <div className="cards-container">
+        <div className="card-container">
+          <img src={DekoLogo} className="card-img" />
+          <img src={VisaLogo} className="card-img" />
+          <img src={MastercardLogo} className="card-img" />
+          <img src={AmericanExpressLogo} className="card-img" />
+        </div>
 
+        <div>
+          <p className="copyright">@ 2021 Steven Stone Ltd. All Rights Reserved.</p>
         </div>
       </div>
     </div>

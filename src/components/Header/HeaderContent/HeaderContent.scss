@@ -1,7 +1,7 @@
 @import '../../../assets//scss/Globals.scss';
 
 .WebHeaderContent {
-  padding: 14px 0 23px;
+  padding: 14px 10px;
 
   .header-top {
     display: flex;
@@ -10,7 +10,6 @@
     align-items: center;
 
     .consult-button {
-      margin: auto 15px;
       justify-content: center;
       align-items: center;
       background: linear-gradient(270deg, #00404E -9.09%, #0A5566 44.05%, #00404E 103.03%);
@@ -22,6 +21,7 @@
     }
   
     .phone-button {
+      padding: 10px 10px;
       font-size: 14px;
       background-color: white;
       border: none;
@@ -32,8 +32,7 @@
   
     .right-box {
       display: flex;
-      padding-right: 100px;
-  
+      padding-right: 80px;
       .search-input {
         background-color: #F7F7F7;
         border: none;
@@ -66,6 +65,7 @@
       padding: 10px 10px;
       font-size: 14px;
       font-weight: 300;
+      border-bottom: 2px solid white;
     }
     .header-nav-item:hover {
       border-bottom: 2px solid black;
