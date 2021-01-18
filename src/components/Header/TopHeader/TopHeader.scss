@@ -27,7 +27,7 @@
     }
 
     .mobile-title {
-      font-size:  15px;
+      font-size:  13px;
       font-weight: 500;
     }
   }
@@ -36,5 +36,9 @@
 @media(max-width: 768px) {
   .TopHeader {
     background-color: #1e5967;
+    .container {
+      text-align: center;
+      padding: 0.25rem !important;
+    }
   }
 }

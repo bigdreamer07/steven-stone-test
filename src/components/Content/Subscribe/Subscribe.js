@@ -13,7 +13,18 @@ const Subscribe = () => {
         </div>
 
         <div className="right">  
-          <input className="email-input" placeholder="Your email address" />
+          <div className="buttonGroup">
+            <button className="male">MALE</button>
+            <button className="female">FEMALE</button>
+          </div>
+          <div>
+            <input className="email-input" placeholder="Your email address" />
+          </div>
+          <div>
+            <p>
+              By submitting your details here you consent to recieve marketing emails from Steven Stone including sales and announcement of future collection launches. You can unsubscribe at any time by clicking the unsuscribe link at the end of every email.
+            </p>
+          </div>
         </div>
       </Container>
     </div>
