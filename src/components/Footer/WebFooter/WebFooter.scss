@@ -1,0 +1,44 @@
+.WebFooter{
+    padding: 90px 0;
+    background-color: #FFFFFF;
+    .footer-top {
+        .footer-menu {
+            display: flex;
+            justify-content: space-between;
+
+            .submenu {
+                // width: 20%;
+                .menu-title {
+                    font-family: Helvetica;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 17px;
+                    color: #373737;
+                    margin-bottom: 24px;
+                }
+                .menu-item {
+                    font-family: Helvetica Light;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 24px;
+                    color: #373737;
+                    mix-blend-mode: normal;
+                    margin-bottom: 10px;
+                    display: block;
+                    cursor: pointer;
+                }
+                .icon-group {
+                    svg {
+                        font-size: 32px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+        .footer-company {
+            margin: 60px auto 30px;
+            width: 65%;
+        }
+    }
+}
