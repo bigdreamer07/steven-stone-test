@@ -11,7 +11,7 @@ import clickCollectIcon from '../../../assets/img/click-collect.png';
 const Item = props => {
   const { icon, title } = props;
   return (
-    <Col xs lg="4">
+    <Col>
       <a href="/#" className="justify-content-md-center link"> 
         <img src={icon} alt="Book Icon" className="icon-png" />
         <span className="item-title">{title}</span>
@@ -25,7 +25,7 @@ const TopHeader = () => {
     query: '(max-width: 1000px)'
   });
   const isMobile = useMediaQuery({
-    query: '(max-width: 760px)'
+    query: '(max-width: 768px)'
   });
 
   var settings = {
@@ -39,7 +39,7 @@ const TopHeader = () => {
 
   return (
     <div className="TopHeader" style={{ backgroundColor: isMobile ? "#1e5967" : "#E77E18" }}>
-      <Container className="justify-content-md-center p-2 container">
+      <div className="justify-content-md-center p-2 container">
         { isMobile && 
           <span className="mobile-title text-white">Sale Now On - Up To 40% Off</span>
         }
@@ -58,7 +58,7 @@ const TopHeader = () => {
             <Item icon={clickCollectIcon} title="Click And Collect Now Available" />
           </Slider>
         }
-      </Container>
+      </div>
     </div>
   );
 }
