@@ -4,7 +4,9 @@ import './Preview.scss'
 const Preview = (data) => {
     return (
         <>
-            Preview
+            <div>
+                
+            </div>
         </>
     )
 }
