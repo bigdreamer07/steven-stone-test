@@ -3,14 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import MobileFooter from './MobileFooter/MobileFooter';
-
-const WebFooter = () => {
-  return (
-    <div>
-
-    </div>
-  )
-}
+import WebFooter from './WebFooter/WebFooter';
 
 const Footer = () => {
   const isMobile = useMediaQuery({
