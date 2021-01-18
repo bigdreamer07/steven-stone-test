@@ -1,13 +1,18 @@
 .Subscribe {
-  padding: 46px 0;
-  background-color: '#FAFAFA' !important;
+  padding: 46px 0 32px;
+  background: rgba(250, 250, 250, 1) !important;
 
   .container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
+    .left {
+      font-size: 25px;
+    }
     .right {
       .email-input {
+
         width: 100%;
         border: none; 
         border-bottom: 1px solid black;
