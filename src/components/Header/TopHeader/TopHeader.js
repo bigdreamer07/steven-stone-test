@@ -41,7 +41,9 @@ const TopHeader = () => {
     <div className="TopHeader">
       <div className="justify-content-md-center p-2 container">
         { isMobile && 
-          <span className="mobile-title text-white">Sale Now On - Up To 40% Off</span>
+          <div className="text-center">
+            <span className="mobile-title text-white">Sale Now On - Up To 40% Off</span>
+          </div>
         }
 
         { !isCarouselWidth && !isMobile &&
