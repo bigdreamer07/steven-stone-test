@@ -1,0 +1,23 @@
+@import '../../../assets/scss/Globals.scss';
+
+.MobileFooter {
+  background-color: '#FAFAFA';
+
+  .footer-top {
+    .dropdown-item-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      
+      .dropdown-item-title {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .footer-bottom {
+    
+  }
+}
