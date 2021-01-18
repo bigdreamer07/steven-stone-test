@@ -39,7 +39,7 @@ const WebHeaderContent = () => {
         </div>
       </div>
 
-      <div className="header-nav">
+      <Container className="header-nav">
         <a href="/#" className="a header-nav-item">Diamonds</a>
         <a href="/#" className="a header-nav-item">Engagement Rings</a>
         <a href="/#" className="a header-nav-item">Wedding Rings</a>
@@ -47,7 +47,7 @@ const WebHeaderContent = () => {
         <a href="/#" className="a header-nav-item">Jewellery</a>
         <a href="/#" className="a header-nav-item">Bespoke</a>
         <a href="/#" className="a header-nav-item">Learn</a>
-      </div>
+      </Container>
     </div>
   )
 };
