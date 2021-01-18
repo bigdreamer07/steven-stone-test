@@ -1,0 +1,83 @@
+@import '../../../assets//scss/Globals.scss';
+
+.WebHeaderContent {
+  padding: 18px 10px;
+
+  .header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .consult-button {
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(270deg, #00404E -9.09%, #0A5566 44.05%, #00404E 103.03%);
+      font-size: 14px;
+      height: 40px;
+      border: none;
+      padding: 0 20px;
+      color: white;
+    }
+  
+    .phone-button {
+      font-size: 14px;
+      background-color: white;
+      border: none;
+      padding: 10px 20px
+    }
+  
+    .right-box {
+      display: flex;
+  
+      .search-input {
+        background-color: #F7F7F7;
+        border: none;
+        height: 35px;
+      }
+  
+      .right-icon-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .right-icons {
+          padding: 5px 5px
+        }
+      }
+    }
+  }
+
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 5px;
+
+    max-width: 1290px !important;
+    margin: 0 auto;
+    padding: 20px 10px;
+    
+    .header-nav-item {
+      padding: 10px 10px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .header-nav-item:hover {
+      border-bottom: 2px solid black;
+    }
+  }
+}
+
+.MobileHeaderContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+
+  .search-cart-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+  }
+}

@@ -1,1 +1,10 @@
-$defaultOrange: '#E77E18'
+$defaultOrange: '#E77E18';
+
+.a {
+  color: inherit;
+}
+    
+.a:hover {
+  color: inherit;
+  text-decoration: none;
+}
