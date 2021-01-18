@@ -38,6 +38,7 @@
         background-color: #F7F7F7;
         border: none;
         height: 35px;
+        outline: none;
       }
   
       .right-icon-box {
@@ -46,7 +47,7 @@
         align-items: center;
   
         .right-icons {
-          padding: 5px 5px;
+          padding-left: 15px;
         }
       }
     }
@@ -79,17 +80,29 @@
   align-items: center;
   padding: 15px 15px;
 
+  & > div {
+    width: 30%;
+
+    .btn {
+      padding: 0;
+    }
+  }
+
+  .icon-container {
+    width: 40%;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
   .search-cart-container {
      display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
-  }
-}
-
-@media(max-width: 768px) {
-  .MobileHeaderContent {
-    .icon-contanier {
-         
-    }
+     flex-direction: row-reverse;
+     
+     .btn {
+       margin: auto 5px;
+     }
   }
 }
