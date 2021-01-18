@@ -38,7 +38,7 @@ const TopHeader = () => {
   };
 
   return (
-    <div className="TopHeader" style={{ backgroundColor: isMobile ? "#1e5967" : "#E77E18" }}>
+    <div className="TopHeader">
       <div className="justify-content-md-center p-2 container">
         { isMobile && 
           <span className="mobile-title text-white">Sale Now On - Up To 40% Off</span>

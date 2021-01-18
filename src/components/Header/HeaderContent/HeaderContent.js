@@ -15,19 +15,19 @@ const WebHeaderContent = () => {
   return (
     <div className="WebHeaderContent">
       <div className="header-top">
-        <div xs lg="4">
+        <div xs>
           <button className="consult-button">Book A Consultation</button>
           <button className="phone-button">
             <img src={PhoneIcon} />
-            <span>  0800 080 3535</span>
+            <span>0800 080 3535</span>
           </button>
         </div>
 
-        <div xs lg="4">
+        <div xs>
           <img src={Logo} />
         </div>
         
-        <div xs lg="4">
+        <div xs>
           <div className="right-box">
             <input className="search-input" />
             <div className="right-icon-box">
