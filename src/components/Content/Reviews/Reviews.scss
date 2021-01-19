@@ -1,0 +1,47 @@
+.Reviews {
+  margin-top: 20px;
+
+  display: flex;
+  height: 420px;
+  flex-direction: row;
+  align-items: center;
+
+  .review-title-bar {
+    padding: 115px 15px 20px 50px;
+    background-color: #F3F3F3;
+
+    .top-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #0A5566;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: normal;
+      font-family: Marcellus;
+      margin-right: 105px;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 50px;
+
+      .logo {
+        margin-left: 20px;
+        .logo-img {
+          width: 60px; height: 30px; 
+        }
+      }
+    }
+  }
+
+  .reviews-container {
+    .review-item {
+      background-color: red;
+    }
+  }
+}
