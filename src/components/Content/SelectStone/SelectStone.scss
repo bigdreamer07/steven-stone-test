@@ -1,0 +1,49 @@
+.SelectStone {
+  .section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 85px;
+
+    .title {
+      margin-top: 25px;
+      font-family: Marcellus;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 60px;
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+
+  .section-content {
+    margin-top: 33px;
+
+    .nav-tabs {
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #0A5566;
+
+      .nav-link {
+        margin-right: 10px;
+        background-color: #FAFAFA;
+        border-color:#C8C8C8 #C8C8C8 #0A5566 #C8C8C8;
+        color: #726D6D;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .nav-link.active {
+        border-color: #0A5566 #0A5566 #fff;
+        color: #0A5566;
+        font-weight: 700;
+      }
+    }
+  }
+}
