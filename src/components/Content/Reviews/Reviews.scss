@@ -42,6 +42,7 @@
     display: flex;
     flex-direction: row;
     width: calc(100% - 400px);
+    overflow: hidden;
 
     .slick-slider {
       height: 100%;

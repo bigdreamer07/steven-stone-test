@@ -121,6 +121,163 @@
 
             .subcontent {
                 padding-left: 44px;
+                margin-bottom: 20px;
+                width: 130%;
+                max-width: 30vw;
+                // transform: translateX(44px);
+
+                .subcontent-title {
+                    font-family: Helvetica;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 23px;
+                    letter-spacing: 0.015em;
+                    color: #0A5566;
+                    margin-bottom: 10px;
+                }
+                .subcontent-text {
+                    font-family: Helvetica;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #000000;
+
+                    .small {
+                        font-size: 12px;
+                        line-height: 32px;
+                        font-weight: 300;
+                    }
+                    .red {
+                        color: red;
+                    }
+                }
+
+                .item-group {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    font-family: Helvetica;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #000000;
+
+                    .grey {
+                        color: #0A5566;
+                        font-weight: 700;
+                    }
+
+                    .subcontent-item {
+                        width: 40%;
+                        .subcontent-image {
+                            display: flex;
+                            margin-bottom: 5px;
+                            img {
+                                height: 14px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .small {
+                    font-size: 12px;
+                    line-height: 32px;
+                    color: #000000;
+                    font-weight: 500;
+                }
+
+                .button {
+                    background-color: #0A5566;
+                    border-radius: 5px;
+                    font-family: Helvetica;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    letter-spacing: 0.015em;
+                    color: #FFFFFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 240px;
+                    height: 54px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .review {
+        .review-title {
+            font-size: 32px;
+            line-height: 45px;
+        }
+        .review-content {
+            flex-direction: column;
+            .content {
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .content-title {
+                    margin-bottom: 10px;
+                    padding: 0;
+                    width: 100%;
+                }
+                .content-img {
+                    width: 32vw;
+                    padding-top: 0;
+                    margin-right: 3vw;
+                    img {
+                        position: relative;
+                        width: 100% !important;
+                        transform: none !important;
+                        top: 0 !important;
+                        left: 0 !important;
+                    }
+                }
+                .content-other {
+                    width: calc(100% - 35vw);
+                }
+                .content-detail {
+                    padding: 0;
+                    .detail-title {
+                        margin-bottom: 5px;
+                        line-height: 20px;
+                    }
+                }
+                .content-edit {
+                    padding: 0;
+                    text-align: left;
+                }
+                .subcontent {
+                    width: 100%;
+                    max-width: 100%;
+                    padding-left: 0;
+                    .subcontent-text {
+                        font-size: 15px;
+                        line-height: 18px;
+
+                        .small {
+                            line-height: 24px;
+                        }
+                    }
+                    .small {
+                        line-height: 24px;
+                    }
+                    .small + .small {
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+                    .button {
+                        margin: auto;
+                    }
+                }
             }
         }
     }
