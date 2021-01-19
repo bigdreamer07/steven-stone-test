@@ -11,9 +11,13 @@ import QuoteIcon from '../../../assets/img/quote.png';
 
 
 var settings = {
-  adaptiveHeight: true,
   arrows: false,
-  variableWidth: true
+  variableWidth: true,
+  infinite: true,
+  speed: 500,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToScroll: 1
 };
 
 const ReviewItem = (props) => {
@@ -50,8 +54,12 @@ const Reviews = () => {
       </div>
 
       <div className="reviews-container">
-        <ReviewItem grayBg={false} />
-        <ReviewItem grayBg={true} />
+        <Slider {...settings}>
+          <ReviewItem grayBg={false} />
+          <ReviewItem grayBg={true} />
+          <ReviewItem grayBg={false} />
+          <ReviewItem grayBg={true} />
+        </Slider>
       </div>
     </div>
   );
