@@ -3,7 +3,6 @@ import { withStyles } from '@material-ui/core/styles';
 import MuiAccordion from '@material-ui/core/Accordion';
 import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import Slider from "react-slick";
@@ -110,30 +109,30 @@ const MobileFooter = () => {
   return (
     <div className="MobileFooter">
       <div className="footer-top">
-        <Dropdown title="Shop Online" expanded={expanded} handleChange={handleChange} items={Items.shopOnline} />
-        <Dropdown title="About Us" expanded={expanded} handleChange={handleChange} items={Items.aboutUs} />
-        <Dropdown title="Customer Service" expanded={expanded} handleChange={handleChange} items={Items.customerService} />
-        <Dropdown title={"Help & Guidance"} expanded={expanded} handleChange={handleChange} items={Items.help} />
+        <Dropdown key="shop" title="Shop Online" expanded={expanded} handleChange={handleChange} items={Items.shopOnline} />
+        <Dropdown key="about-us" title="About Us" expanded={expanded} handleChange={handleChange} items={Items.aboutUs} />
+        <Dropdown key="customer-service" title="Customer Service" expanded={expanded} handleChange={handleChange} items={Items.customerService} />
+        <Dropdown key="help-guide" title={"Help & Guidance"} expanded={expanded} handleChange={handleChange} items={Items.help} />
       </div>
 
       <div className="footer-bottom">
         <div className="advertise-slider">
           <Slider {...settings}>
-            <img src={GoogleLogo} />
-            <img src={FeefoLogo} />
-            <img src={AssayLogo} />
-            <img src={NajLogo} />
-            <img src={FacebookLogo} />
-            <img src={McAfeeLogo} />
-            <img src={TrustpilotLogo} />
+            <img alt="google" src={GoogleLogo} />
+            <img alt="feefo" src={FeefoLogo} />
+            <img alt="assay" src={AssayLogo} />
+            <img alt="naj" src={NajLogo} />
+            <img alt="facebook" src={FacebookLogo} />
+            <img alt="mcafee" src={McAfeeLogo} />
+            <img alt="trust" src={TrustpilotLogo} />
           </Slider>
         </div>
 
         <div className="card-container">
-          <img src={DekoLogo} className="card-img" />
-          <img src={VisaLogo} className="card-img" />
-          <img src={MastercardLogo} className="card-img" />
-          <img src={AmericanExpressLogo} className="card-img" />
+          <img alt="deko" src={DekoLogo} className="card-img" />
+          <img alt="visa" src={VisaLogo} className="card-img" />
+          <img alt="master" src={MastercardLogo} className="card-img" />
+          <img alt="american" src={AmericanExpressLogo} className="card-img" />
         </div>
 
         <div>
