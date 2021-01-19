@@ -110,7 +110,7 @@ const WebFooter = () => {
         </div>
       </div>
       <div className="footer-company">
-        <Slider {...settings}>
+        {/* <Slider {...settings}> */}
           <img alt="feefo" src={FeefoLogo} />
           <img alt="trustpilot" src={TrustpilotLogo} />
           <img alt="google" src={GoogleLogo} />
@@ -118,7 +118,7 @@ const WebFooter = () => {
           <img alt="assay" src={AssayLogo} />
           <img alt="naj" src={NajLogo} />
           <img alt="mcafee" src={McAfeeLogo} />
-        </Slider>
+        {/* </Slider> */}
       </div>
     </div>
     <div className="footer-bottom">

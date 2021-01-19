@@ -113,9 +113,14 @@
                 cursor: pointer;
                 margin-top: auto;
 
-                .underline {
-                    text-decoration: underline;
+                .MuiSvgIcon-root {
+                    font-size: 14px;
+                    margin-right: 10px;
                 }
+            }
+
+            .subcontent {
+                padding-left: 44px;
             }
         }
     }

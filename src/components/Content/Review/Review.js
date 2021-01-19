@@ -3,6 +3,7 @@ import './Review.scss'
 
 import ImgRing from '../../../assets/img/review-ring.jpg';
 import ImgDiamond from '../../../assets/img/review-diamond.png';
+import IconPen from '@material-ui/icons/BorderColorOutlined';
 
 const Review = (data) => {
     return (
@@ -33,7 +34,8 @@ const Review = (data) => {
                                 </div>
                             </div>
                             <div className="content-edit">
-                                change ring design
+                                <IconPen />
+                                <span className="underline">change ring design</span>
                             </div>
                         </div>
                         <div className="content">
@@ -60,11 +62,33 @@ const Review = (data) => {
                                 </div>
                             </div>
                             <div className="content-edit">
+                                <IconPen />
                                 <span className="underline">change ring design</span>
                             </div>
                         </div>
                         <div className="content">
                             <div className="content-title">Order Summary</div>
+                            <div className="subcontent">
+                                <div className="subcontent-title">Ring Details</div>
+                                <div className="subcontent-text">
+                                    <div>Platinum Simplicity with Round, 0.18ct, I Colour, SI1 Clarity - GIA 46745876</div>
+                                    <div>Ring Size</div>
+                                </div>
+                            </div>
+                            <div className="subcontent">
+                                <div className="subcontent-title">Shipping</div>
+                                <div className="subcontent-text">
+                                    <div>Order in 4 hours 3 mins and 30 secs for your order to ship by Thursday, October 22.</div>
+                                    <div>Free Shipping, Hassle-Free Returns</div>
+                                    <div>Need it sooner? Contact Us on 0800 080 3535 or <span className="underline">open online chat</span></div>
+                                </div>
+                            </div>
+                            <div className="subcontent">
+                                <div className="subcontent-title">Payment options</div>
+                                <div style={{display: "flex"}}>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
