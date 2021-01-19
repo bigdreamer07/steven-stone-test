@@ -1,6 +1,7 @@
 .WebFooter{
-    padding: 90px 0;
+    padding: 90px 0 10px;
     background-color: #FFFFFF;
+    
     .footer-top {
         .footer-menu {
             display: flex;
@@ -39,6 +40,49 @@
         .footer-company {
             margin: 60px auto 30px;
             width: 65%;
+        }
+    }
+    .footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px 0 30px;
+        position: relative;
+        
+        .copyright {
+            font-family: Helvetica;
+            font-size: 13px;
+            line-height: 15px;
+            color: #000000;
+            mix-blend-mode: normal;
+            opacity: 0.4;
+        }
+
+        .card-container {
+            position: absolute;
+            // width: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            
+            .card-img {
+                width: auto;
+                height: 27px;
+                margin: auto 25px;
+            }
+        }
+
+        &:before {
+            content: '';
+            width: 100vw;
+            height: 2px;
+            position: absolute;
+            top: 0;
+            left: calc(50% - 50vw);
+            display: block;
+            background-color: #D8D8D8;
+            mix-blend-mode: normal;
         }
     }
 }
