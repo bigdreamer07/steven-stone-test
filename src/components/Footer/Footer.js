@@ -1,6 +1,5 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { Container, Row, Col } from 'react-bootstrap';
 
 import MobileFooter from './MobileFooter/MobileFooter';
 import WebFooter from './WebFooter/WebFooter';
