@@ -1,0 +1,122 @@
+.review {
+    background-color: #FAFAFA;
+    padding: 20px 0;
+
+    .review-title {
+        text-align: center;
+        font-family: Marcellus;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+        color: #222222;
+    }
+    .review-content {
+        margin: 20px 0 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+
+        .content {
+            width: 33%;
+            padding-bottom: 48px;
+            display: flex;
+            flex-direction: column;
+            background-color: #FAFAFA;
+
+            .content-title {
+                padding: 0 44px;
+                font-family: Helvetica;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: #222222;
+                margin-bottom: 40px;
+            }
+
+            .content-img {
+                position: relative;
+                width: 100%;
+                padding-top: 75%;
+                overflow: hidden;
+
+                img {
+                    position: absolute;
+                    display: block;
+
+                    &.ring-img {
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        width: 100%;
+                    }
+
+                    &.diamond-img {
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 50%;
+                    }
+                }
+            }
+
+            .content-detail {
+                padding: 0 44px;
+                margin-bottom: 20px;
+                .detail-title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    font-family: Helvetica;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: 14px;
+                    line-height: 23px;
+                    color: #000000;
+                    margin-bottom: 20px;
+
+                    span {
+                        font-family: Helvetica;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 23px;
+                        letter-spacing: 0.015em;
+                        color: #0A5566;
+                    }
+                }
+
+                .detail-text {
+                    font-family: Helvetica-Light;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 23px;
+                    letter-spacing: 0.015em;
+
+                    .underline {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .content-edit {
+                padding: 0 44px;
+                font-family: Helvetica Light;
+                font-size: 14px;
+                line-height: 11px;
+                letter-spacing: 0.015em;
+                color: #5F5F5F;
+                text-align: right;
+                cursor: pointer;
+                margin-top: auto;
+
+                .underline {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
