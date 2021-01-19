@@ -10,6 +10,7 @@ import IconCard from '../../../assets/img/payment_card.png';
 import IconBank from '../../../assets/img/payment_bank.png';
 
 import IconPen from '@material-ui/icons/BorderColorOutlined';
+import IconShipping from '@material-ui/icons/LocalShippingOutlined';
 
 const Review = (data) => {
     return (
@@ -86,7 +87,7 @@ const Review = (data) => {
                                 </div>
                             </div>
                             <div className="subcontent">
-                                <div className="subcontent-title">Shipping</div>
+                                <div className="subcontent-title">Shipping<IconShipping /></div>
                                 <div className="subcontent-text">
                                     <div>Order in <span className="red">4 hours 3 mins and 30 secs</span> for your order to ship by Thursday, October 22.</div>
                                     <div className="small">Free Shipping, Hassle-Free Returns</div>

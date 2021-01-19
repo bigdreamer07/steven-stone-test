@@ -135,6 +135,9 @@
                     letter-spacing: 0.015em;
                     color: #0A5566;
                     margin-bottom: 10px;
+                    .MuiSvgIcon-root {
+                        margin-left: 5px;
+                    }
                 }
                 .subcontent-text {
                     font-family: Helvetica;
