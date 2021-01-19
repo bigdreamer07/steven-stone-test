@@ -15,9 +15,10 @@ import AssayLogo from '../../../assets/img/assay.png';
 import TrustpilotLogo from '../../../assets/img/trustpilot.png';
 import NajLogo from '../../../assets/img/naj.png';
 import FeefoLogo from '../../../assets/img/feefo.png';
+import McAfeeLogo from '../../../assets/img/mcafee.png';
 
 var settings = {
-    slidesToShow: 6,
+    slidesToShow: 7,
     adaptiveHeight: true,
     infinite: true,
     arrows: false,
@@ -48,7 +49,7 @@ var settings = {
   
 const WebFooter = () => {
   return (
-    <div className="WebFooter">
+    <div className="WebFooter container">
         <div className="footer-top">
             <div className="footer-menu">
                 <div className="submenu">
@@ -112,6 +113,7 @@ const WebFooter = () => {
                     <img src={AssayLogo} />
                     <img src={NajLogo} />
                     <img src={FacebookLogo} />
+                    <img src={McAfeeLogo} />
                     <img src={TrustpilotLogo} />
                 </Slider>
             </div>

@@ -12,9 +12,9 @@ const Footer = () => {
 
   return (
     <div className="Footer">
-      <Container className="container">
+      <div>
         { !isMobile ? <WebFooter /> : <MobileFooter /> }
-      </Container>
+      </div>
     </div>
   );
 }
