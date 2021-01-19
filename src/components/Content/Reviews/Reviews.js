@@ -2,9 +2,27 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import './Reviews.scss';
 
+
+import Stars from '../../../assets/img/stars.png';
 import FeefoLogo from '../../../assets/img/feefo-black.png';
 import Trustpiolt from '../../../assets/img/trustpilot-black.png';
 import Facebook from '../../../assets/img/facebook-black.png';
+import QuoteIcon from '../../../assets/img/quote.png';
+
+const ReviewItem = () => {
+  return (
+    <div className="review-item">
+      <img src={Stars} />
+      <span className="h5 name">David Kinsella</span>
+      <span className="h6 review-txt">
+        “Molly was a great help when choosing an enagement ring. She chose the perfect diamond for a great price. I would highly recommend buying at Steven Stone”
+      </span>
+      <div className="review-footer">
+        <img src={QuoteIcon} />
+      </div>
+    </div>
+  )
+}
 
 const Reviews = () => {
   const isMobile = useMediaQuery({
@@ -13,22 +31,7 @@ const Reviews = () => {
 
   return (
     <div className="Reviews">
-      <div className="review-title-bar">
-        <p className="top-title">Over 500 5 Star Customer Reviews</p>
-        <p className="title">See What<br />People Say</p>
-
-        <div className="logo-container">
-          <a href="/#" className="logo"><img alt="feefo" src={FeefoLogo} className="logo-img" /></a>
-          <a href="/#" className="logo"><img alt="trustpilot" src={Trustpiolt} className="logo-img" /></a>
-          <a href="/#" className="logo"><img alt="facebook" src={Facebook} className="logo-img" /></a>
-        </div>
-      </div>
-
-      <div className="reviews-container">
-        <div className="review-item">
-          <h5>David Kinsella</h5>
-        </div>
-      </div>
+      <ReviewItem />
     </div>
   );
 }
