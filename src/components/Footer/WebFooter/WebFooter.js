@@ -17,6 +17,11 @@ import NajLogo from '../../../assets/img/naj.png';
 import FeefoLogo from '../../../assets/img/feefo.png';
 import McAfeeLogo from '../../../assets/img/mcafee.png';
 
+import DekoLogo from '../../../assets/img/dekopay.png';
+import MastercardLogo from '../../../assets/img/mastercard.png';
+import AmericanExpressLogo from '../../../assets/img/american-express.png';
+import VisaLogo from '../../../assets/img/visa.png';
+
 var settings = {
     slidesToShow: 7,
     adaptiveHeight: true,
@@ -108,8 +113,10 @@ const WebFooter = () => {
             </div>
             <div className="footer-company">
                 <Slider {...settings}>
-                    <img src={GoogleLogo} />
                     <img src={FeefoLogo} />
+                    <img src={TrustpilotLogo} />
+                    <img src={GoogleLogo} />
+                    <img src={FacebookLogo} />
                     <img src={AssayLogo} />
                     <img src={NajLogo} />
                     <img src={FacebookLogo} />
@@ -119,7 +126,16 @@ const WebFooter = () => {
             </div>
         </div>
         <div className="footer-bottom">
-            
+            <div className="copyright">
+                © 2019 Steven Stone Ltd.<br/>
+                All Rights Reserved.
+            </div>
+            <div className="card-container">
+                <img src={DekoLogo} className="card-img" />
+                <img src={VisaLogo} className="card-img" />
+                <img src={MastercardLogo} className="card-img" />
+                <img src={AmericanExpressLogo} className="card-img" />
+            </div>
         </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import './Preview.scss'
+import './Review.scss'
 
-const Preview = (data) => {
+const Review = (data) => {
     return (
         <>
             <div>
@@ -11,4 +11,4 @@ const Preview = (data) => {
     )
 }
 
-export default Preview
+export default Review
