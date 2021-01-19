@@ -16,6 +16,7 @@ import AssayLogo from '../../../assets/img/assay.png';
 import TrustpilotLogo from '../../../assets/img/trustpilot.png';
 import NajLogo from '../../../assets/img/naj.png';
 import FeefoLogo from '../../../assets/img/feefo.png';
+import McAfeeLogo from '../../../assets/img/mcafee.png';
 
 import DekoLogo from '../../../assets/img/dekopay.png';
 import MastercardLogo from '../../../assets/img/mastercard.png';
@@ -31,6 +32,7 @@ const Items = {
 
 const Accordion = withStyles({
   root: {
+    width: '100%',
     backgroundColor: '#FAFAFA',
     boxShadow: 'none',
     '&:not(:last-child)': {
@@ -122,6 +124,7 @@ const MobileFooter = () => {
             <img src={AssayLogo} />
             <img src={NajLogo} />
             <img src={FacebookLogo} />
+            <img src={McAfeeLogo} />
             <img src={TrustpilotLogo} />
           </Slider>
         </div>

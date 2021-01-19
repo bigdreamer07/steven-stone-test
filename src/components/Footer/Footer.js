@@ -1,6 +1,5 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { Container, Row, Col } from 'react-bootstrap';
 
 import MobileFooter from './MobileFooter/MobileFooter';
 import WebFooter from './WebFooter/WebFooter';
@@ -14,9 +13,9 @@ const Footer = () => {
 
   return (
     <div className="Footer">
-      <Container className="container">
+      <div>
         { !isMobile ? <WebFooter /> : <MobileFooter /> }
-      </Container>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,11 @@
 @import '../../../assets/scss/Globals.scss';
 
 .MobileFooter {
+  margin-top: 20px;
   background-color: '#FAFAFA';
 
   .footer-top {
+
     .dropdown-item-header {
       display: flex;
       flex-direction: row;

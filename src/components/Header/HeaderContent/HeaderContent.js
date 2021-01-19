@@ -1,7 +1,7 @@
 import React from 'react'
 import './HeaderContent.scss';
 import { useMediaQuery } from 'react-responsive'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import Logo from '../../../assets/img/Logo.png';
 import PhoneIcon from '../../../assets/img/phone-icon.png';
@@ -15,25 +15,25 @@ const WebHeaderContent = () => {
   return (
     <div className="WebHeaderContent">
       <div className="header-top">
-        <div xs>
+        <div xs="true">
           <button className="consult-button">Book A Consultation</button>
           <button className="phone-button">
-            <img src={PhoneIcon} />
+            <img alt="phone" src={PhoneIcon} />
             <span>0800 080 3535</span>
           </button>
         </div>
 
-        <div xs>
-          <img src={Logo} />
+        <div xs="true">
+          <img alt="logo-img" src={Logo} />
         </div>
         
-        <div xs>
+        <div xs="true">
           <div className="right-box">
             <input className="search-input" />
             <div className="right-icon-box">
-              <a to="/#" className="right-icons"><img src={LocationIcon} /></a>
-              <a href="/#" className="right-icons"><img src={AccountIcon} /></a>
-              <a href="/#" className="right-icons"><img src={CartIcon} /></a>
+              <a href="/#" className="right-icons"><img alt="location" src={LocationIcon} /></a>
+              <a href="/#" className="right-icons"><img alt="account" src={AccountIcon} /></a>
+              <a href="/#" className="right-icons"><img alt="cart" src={CartIcon} /></a>
             </div>
           </div>
         </div>
@@ -56,19 +56,19 @@ const MobileHeaderContent = () => {
   return (
     <div className="MobileHeaderContent">
       <div className="menu-toogle-container">
-        <a className="btn">
-          <img src={MenuIcon} />
+        <a href="/#" className="btn">
+          <img alt="menu" src={MenuIcon} />
         </a>
       </div>
       <div className="icon-container">
-        <img src={Logo} />
+        <img alt="logo" src={Logo} />
       </div>
       <div className="search-cart-container">
-        <a className="btn">
-          <img src={SearchIcon} />
+        <a href="/#" className="btn">
+          <img alt="search" src={SearchIcon} />
         </a>
-        <a className="btn">
-          <img src={CartIcon} />
+        <a href="/#" className="btn">
+          <img alt="cart" src={CartIcon} />
         </a>
       </div>
     </div>
