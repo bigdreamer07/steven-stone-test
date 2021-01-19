@@ -1,6 +1,6 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import './Reviews.scss';
+import './CustomerReviews.scss';
 import Slider from "react-slick";
 
 import Stars from '../../../assets/img/stars.png';
@@ -16,7 +16,7 @@ var settings = {
   infinite: true,
   speed: 500,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1500,
   slidesToScroll: 1
 };
 
@@ -24,25 +24,25 @@ const ReviewItem = (props) => {
   const { grayBg } = props;
   return (
     <div className={"review-item " + (grayBg ? "grayBackground" : "")}>
-      <img src={Stars} />
+      <img alt="stars" src={Stars} />
       <span className="h5 name">David Kinsella</span>
       <span className="h6 review-txt">
         “Molly was a great help when choosing an enagement ring. She chose the perfect diamond for a great price. I would highly recommend buying at Steven Stone”
       </span>
       <div className="review-footer">
-        <img src={QuoteIcon} />
+        <img alt="quote" src={QuoteIcon} />
       </div>
     </div>
   )
 }
 
-const Reviews = () => {
+const CustomerReviews = () => {
   const isMobile = useMediaQuery({
     query: '(max-width: 768px)'
   });
 
   return (
-    <div className="Reviews">
+    <div className="CustomerReviews">
       <div className="review-title-container">
         <span className="title-text">Over 500 5 Star Customer Reviews</span>
         <span className="title">See What<br />People Say</span>
@@ -65,4 +65,4 @@ const Reviews = () => {
   );
 }
 
-export default Reviews;
+export default CustomerReviews;

@@ -1,6 +1,7 @@
-.Reviews {
+.CustomerReviews {
   display: flex;
   flex-direction: row;
+  overflow: hidden;
   
   .review-title-container {
     width: 400px;
