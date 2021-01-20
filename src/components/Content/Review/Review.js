@@ -41,8 +41,22 @@ const Review = () => {
                     <div>Metal: Platinum</div>
                     <div>Style: Shoulder Set</div>
                     <div>Shape: Princess Cut</div>
-                    <div>Finger Size:  </div>
-                    <div>Add Engraving:  </div>
+                    <div>
+                      Finger Size:  
+                      <select className="select">
+                        <option>Please select</option>
+                        <option>Size 1</option>
+                        <option>Size 2</option>
+                      </select>
+                    </div>
+                    <div>
+                      Add Engraving:  
+                      <select className="select">
+                        <option>None</option>
+                        <option>Size 1</option>
+                        <option>Size 2</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
                 <div className="content-edit">
@@ -87,7 +101,14 @@ const Review = () => {
                 <div className="subcontent-title">Ring Details</div>
                 <div className="subcontent-text">
                   <div>Platinum Simplicity with Round, 0.18ct, I Colour, SI1 Clarity - GIA 46745876</div>
-                  <div className="small">Ring Size</div>
+                  <div className="small">
+                    Ring Size
+                    <select className="select">
+                      <option>Please select</option>
+                      <option>Size 1</option>
+                      <option>Size 2</option>
+                    </select>
+                  </div>
                 </div>
               </div>
               <div className="subcontent">
