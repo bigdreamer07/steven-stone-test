@@ -10,7 +10,7 @@
 
         .product-image {
             margin-left: 5%;
-            padding: 0 5%;
+            padding: 0 8%;
             width: 55%;
             position: relative;
             
@@ -98,7 +98,7 @@
 
         .product-detail {
             width: 40%;
-            padding: 0 60px;
+            padding: 0 30px;
             background-color: #FFFFFF;
 
             .link {
@@ -314,7 +314,6 @@
         .product-container {
             flex-direction: column;
             .product-image {
-                padding: 0 10px;
                 margin: auto;
                 width: 100%;
                 .image-container {

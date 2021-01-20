@@ -28,12 +28,9 @@ var settingsThumbnail = {
 }
 
 const Product = (data) => {
-
     const [thumbNailCompo, setThumbNailCompo] = useState(null)
     const [galleryCompo, setGalleryCompo] = useState(null)
     const [activeNum, setActiveNum] = useState(1);
-
-
     return (
         <>
             <div className="product">
