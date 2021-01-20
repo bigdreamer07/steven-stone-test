@@ -1,5 +1,4 @@
 import React from 'react';
-import Slider from "react-slick";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -19,36 +18,6 @@ import DekoLogo from '../../../assets/img/dekopay.png';
 import MastercardLogo from '../../../assets/img/mastercard.png';
 import AmericanExpressLogo from '../../../assets/img/american-express.png';
 import VisaLogo from '../../../assets/img/visa.png';
-
-var settings = {
-  slidesToShow: 7,
-  adaptiveHeight: true,
-  infinite: true,
-  arrows: false,
-  speed: 500,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-    {
-      breakpoint: 1440,
-      settings: {
-      slidesToShow: 6,
-      }
-    },
-    {
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 5,
-      }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 4,
-      }
-    },
-  ]
-};
   
 const WebFooter = () => {
   return (
@@ -110,15 +79,13 @@ const WebFooter = () => {
         </div>
       </div>
       <div className="footer-company">
-        {/* <Slider {...settings}> */}
-          <img alt="feefo" src={FeefoLogo} />
-          <img alt="trustpilot" src={TrustpilotLogo} />
-          <img alt="google" src={GoogleLogo} />
-          <img alt="facebook" src={FacebookLogo} />
-          <img alt="assay" src={AssayLogo} />
-          <img alt="naj" src={NajLogo} />
-          <img alt="mcafee" src={McAfeeLogo} />
-        {/* </Slider> */}
+        <img alt="feefo" src={FeefoLogo} />
+        <img alt="trustpilot" src={TrustpilotLogo} />
+        <img alt="google" src={GoogleLogo} />
+        <img alt="facebook" src={FacebookLogo} />
+        <img alt="assay" src={AssayLogo} />
+        <img alt="naj" src={NajLogo} />
+        <img alt="mcafee" src={McAfeeLogo} />
       </div>
     </div>
     <div className="footer-bottom">

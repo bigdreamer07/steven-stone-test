@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, {useState, useEffect} from 'react'
 import './Product.scss'
 import Slider from "react-slick";
 import Product_1 from '../../../assets/img/1.jpg'
@@ -132,7 +132,7 @@ const Product = (data) => {
                                         <div><span>Round Brilliant</span></div>
                                     </div>
                                     <div className="content-image">
-                                        <img src={Product_Info} />
+                                        <img alt="product" src={Product_Info} />
                                     </div>
                                 </div>
                             </div>

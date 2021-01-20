@@ -91,8 +91,8 @@ const Dropdown = (props) => {
         </div>
       </AccordionSummary>
       
-      { items.map(item => (
-        <AccordionDetails>
+      { items.map((item, index) => (
+        <AccordionDetails key={index}>
           <a href="/#" className="a">{item}</a>
         </AccordionDetails>
       )) }

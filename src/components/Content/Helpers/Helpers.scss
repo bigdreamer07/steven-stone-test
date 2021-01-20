@@ -9,7 +9,7 @@
   
   .content {
     display: flex;
-    padding-top: 40px;
+    padding: 70px 0;
     
     .helper-item-container {
       display: flex;
@@ -26,6 +26,10 @@
       .item-title {
         font-size: 18px;
         font-weight: 500;
+      }
+
+      .item-description {
+        font-size: 14px;
       }
     }
   }
