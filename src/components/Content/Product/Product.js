@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './Product.scss'
 
 import Product_1 from '../../../assets/img/1.jpg'
@@ -18,18 +18,18 @@ const Product = (data) => {
                 <div className="product-container">
                     <div className="product-image">
                         <div className="image-container">
-                            <img src={Product_1} />
+                            <img alt="product" src={Product_1} />
                             <div className="image-text">
                                 Steven Stone Engraving for illustration purposes only.<br/>
                                 <span>New:</span> You can now choose your own engraving
                             </div>
                         </div>
                         <div className="image-gallery">
-                            <div className="image-wrapper active"><img src={Product_2} /></div>
-                            <div className="image-wrapper"><img src={Product_3} /></div>
-                            <div className="image-wrapper"><img src={Product_4} /></div>
-                            <div className="image-wrapper"><img src={Product_5} /></div>
-                            <div className="image-wrapper"><img src={Product_6} /></div>
+                            <div className="image-wrapper active"><img alt="product" src={Product_2} /></div>
+                            <div className="image-wrapper"><img alt="product" src={Product_3} /></div>
+                            <div className="image-wrapper"><img alt="product" src={Product_4} /></div>
+                            <div className="image-wrapper"><img alt="product" src={Product_5} /></div>
+                            <div className="image-wrapper"><img alt="product" src={Product_6} /></div>
                         </div>
                     </div>
                     <div className="product-detail">
@@ -72,7 +72,7 @@ const Product = (data) => {
                                         <div><span>Round Brilliant</span></div>
                                     </div>
                                     <div className="content-image">
-                                        <img src={Product_Info} />
+                                        <img alt="product" src={Product_Info} />
                                     </div>
                                 </div>
                             </div>

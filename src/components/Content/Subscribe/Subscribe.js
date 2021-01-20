@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Subscribe.scss';
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 const Subscribe = () => {
   const [active, setActive] = useState('male');
@@ -16,8 +16,8 @@ const Subscribe = () => {
 
         <div className="right">  
           <div className="buttonGroup">
-            <button onClick={() => setActive('male')} className={ active=="male" ? "active" : "inactive"}>MALE</button>
-            <button onClick={() => setActive('famale')} className={ active!="male" ? "active" : "inactive"}>FEMALE</button>
+            <button onClick={() => setActive('male')} className={ active === "male" ? "active" : "inactive"}>MALE</button>
+            <button onClick={() => setActive('famale')} className={ active !== "male" ? "active" : "inactive"}>FEMALE</button>
           </div>
           <div>
             <input className="email-input" placeholder="Your email address" />

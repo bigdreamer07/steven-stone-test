@@ -1,7 +1,7 @@
 import React from 'react'
 import './TopHeader.scss';
 import { useMediaQuery } from 'react-responsive'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Slider from "react-slick";
 
 import bookIcon from '../../../assets/img/book.png';

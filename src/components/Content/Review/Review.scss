@@ -1,15 +1,23 @@
-.review {
+.Review {
     background-color: #FAFAFA;
     padding: 20px 0;
+
+    .arrow {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
 
     .review-title {
         text-align: center;
         font-family: Marcellus;
-        font-style: normal;
         font-weight: 400;
         font-size: 48px;
         line-height: 60px;
         color: #222222;
+        padding-top: 50px;
     }
     .review-content {
         margin: 20px 0 0;
@@ -26,8 +34,6 @@
 
             .content-title {
                 padding: 0 44px;
-                font-family: Helvetica;
-                font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 21px;
@@ -69,17 +75,13 @@
                     justify-content: space-between;
                     align-items: center;
 
-                    font-family: Helvetica;
-                    font-weight: 600;
-                    font-style: normal;
+                        font-weight: 600;
                     font-size: 14px;
                     line-height: 23px;
                     color: #000000;
                     margin-bottom: 20px;
 
                     span {
-                        font-family: Helvetica;
-                        font-style: normal;
                         font-weight: 400;
                         font-size: 18px;
                         line-height: 23px;
@@ -90,7 +92,6 @@
 
                 .detail-text {
                     font-family: Helvetica-Light;
-                    font-style: normal;
                     font-weight: 300;
                     font-size: 13px;
                     line-height: 23px;
@@ -127,24 +128,21 @@
                 // transform: translateX(44px);
 
                 .subcontent-title {
-                    font-family: Helvetica;
-                    font-style: normal;
                     font-weight: 400;
                     font-size: 18px;
                     line-height: 23px;
                     letter-spacing: 0.015em;
                     color: #0A5566;
                     margin-bottom: 10px;
+                    margin-top: 20px;
                     .MuiSvgIcon-root {
                         margin-left: 5px;
                     }
                 }
                 .subcontent-text {
-                    font-family: Helvetica;
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 28px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
                     color: #000000;
 
                     .small {
@@ -162,8 +160,6 @@
                     justify-content: space-between;
                     align-items: center;
 
-                    font-family: Helvetica;
-                    font-style: normal;
                     font-weight: 500;
                     font-size: 18px;
                     line-height: 26px;
@@ -175,7 +171,6 @@
                     }
 
                     .subcontent-item {
-                        width: 40%;
                         .subcontent-image {
                             display: flex;
                             margin-bottom: 5px;
@@ -197,8 +192,6 @@
                 .button {
                     background-color: #0A5566;
                     border-radius: 5px;
-                    font-family: Helvetica;
-                    font-style: normal;
                     font-weight: bold;
                     font-size: 18px;
                     letter-spacing: 0.015em;
@@ -215,8 +208,8 @@
     }
 }
 
-@media(max-width: 768px) {
-    .review {
+@media(max-width: 990px) {
+    .Review {
         .review-title {
             font-size: 32px;
             line-height: 45px;
@@ -263,8 +256,9 @@
                     max-width: 100%;
                     padding-left: 0;
                     .subcontent-text {
-                        font-size: 15px;
+                        font-size: 14px;
                         line-height: 18px;
+                        font-weight: 600;
 
                         .small {
                             line-height: 24px;

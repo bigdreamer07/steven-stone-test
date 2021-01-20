@@ -1,5 +1,4 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
 import './CustomerReviews.scss';
 import Slider from "react-slick";
 
@@ -37,10 +36,6 @@ const ReviewItem = (props) => {
 }
 
 const CustomerReviews = () => {
-  const isMobile = useMediaQuery({
-    query: '(max-width: 768px)'
-  });
-
   return (
     <div className="CustomerReviews">
       <div className="review-title-container">
