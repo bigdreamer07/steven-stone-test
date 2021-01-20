@@ -99,6 +99,14 @@
                     .underline {
                         text-decoration: underline;
                     }
+
+                    .select {
+                        margin-top: 5px;
+                        margin-left: 5px;
+                        padding: 5px;
+                        border-radius: 5px;
+                        border: 1px solid #B4B4B4;
+                    }
                 }
             }
 
@@ -148,6 +156,14 @@
                         font-size: 12px;
                         line-height: 32px;
                         font-weight: 300;
+
+                        .select {
+                            margin-top: 5px;
+                            margin-left: 5px;
+                            padding: 5px;
+                            border-radius: 5px;
+                            border: 1px solid #B4B4B4;
+                        }
                     }
                     .red {
                         color: red;
