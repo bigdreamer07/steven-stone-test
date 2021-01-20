@@ -106,11 +106,17 @@ const Product = (data) => {
                             <div className="button active">Choose A Diamond</div>
                         </div>
                         <div className="property">
-                            <select id="Finger">
+                            <select id="finger" className="finger">
                                 <option value="0">Finger Size</option>
                                 <option value="1">Size1</option>
                                 <option value="2">Size2</option>
                                 <option value="3">Size3</option>
+                            </select>
+                            <select id="engraving" className="engraving">
+                                <option value="0">Add Engraving</option>
+                                <option value="1">Engraving-1</option>
+                                <option value="2">Engraving-2</option>
+                                <option value="3">Engraving-3</option>
                             </select>
                         </div>
                         <div className="product-info">
