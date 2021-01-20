@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './Product.scss'
-
+import Slider from "react-slick";
 import Product_1 from '../../../assets/img/1.jpg'
 import Product_2 from '../../../assets/img/2.jpg'
 import Product_3 from '../../../assets/img/3.jpg'
@@ -11,25 +11,78 @@ import Product_Info from '../../../assets/img/product_info.png'
 
 import IconShipping from '@material-ui/icons/LocalShippingOutlined'
 
+var settingsGallery = {
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    // asNavFor: '.slider-thumbnail',
+    infinite: true,
+    dots: false,
+    focusOnSelect: true
+}
+var settingsThumbnail = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // asNavFor: '.slider-gallery',
+    infinite: true,
+    dots: false,
+}
+
 const Product = (data) => {
+
+    const [thumbNailCompo, setThumbNailCompo] = useState(null)
+    const [galleryCompo, setGalleryCompo] = useState(null)
+
+
     return (
         <>
             <div className="product">
                 <div className="product-container">
                     <div className="product-image">
                         <div className="image-container">
-                            <img src={Product_1} />
+                            <Slider 
+                                {...settingsThumbnail} 
+                                className="slick-thumbnail" 
+                                ref={slider => setThumbNailCompo(slider)}
+                                asNavFor={galleryCompo}
+                            >
+                                <div className="image"><img src={Product_1} /></div>
+                                <div className="image"><img src={Product_2} /></div>
+                                <div className="image"><img src={Product_3} /></div>
+                                <div className="image"><img src={Product_4} /></div>
+                                <div className="image"><img src={Product_5} /></div>
+                                <div className="image"><img src={Product_6} /></div>
+                            </Slider>
                             <div className="image-text">
                                 Steven Stone Engraving for illustration purposes only.<br/>
                                 <span>New:</span> You can now choose your own engraving
                             </div>
                         </div>
                         <div className="image-gallery">
-                            <div className="image-wrapper active"><img src={Product_2} /></div>
-                            <div className="image-wrapper"><img src={Product_3} /></div>
-                            <div className="image-wrapper"><img src={Product_4} /></div>
-                            <div className="image-wrapper"><img src={Product_5} /></div>
-                            <div className="image-wrapper"><img src={Product_6} /></div>
+                            <Slider 
+                                {...settingsGallery} 
+                                className="slick-gallery" 
+                                ref={slider => setGalleryCompo(slider)}
+                                asNavFor={thumbNailCompo}
+                            >
+                                <div className="image-wrapper">
+                                    <div className="image"><img src={Product_1} /></div>
+                                </div>
+                                <div className="image-wrapper">
+                                    <div className="image"><img src={Product_2} /></div>
+                                </div>
+                                <div className="image-wrapper">
+                                    <div className="image"><img src={Product_3} /></div>
+                                </div>
+                                <div className="image-wrapper">
+                                    <div className="image"><img src={Product_4} /></div>
+                                </div>
+                                <div className="image-wrapper">
+                                    <div className="image"><img src={Product_5} /></div>
+                                </div>
+                                <div className="image-wrapper">
+                                    <div className="image"><img src={Product_6} /></div>
+                                </div>
+                            </Slider>
                         </div>
                     </div>
                     <div className="product-detail">
@@ -52,7 +105,14 @@ const Product = (data) => {
                             <div className="button">Book A Consultation</div>
                             <div className="button active">Choose A Diamond</div>
                         </div>
-                        <div className="property"></div>
+                        <div className="property">
+                            <select id="Finger">
+                                <option value="0">Finger Size</option>
+                                <option value="1">Size1</option>
+                                <option value="2">Size2</option>
+                                <option value="3">Size3</option>
+                            </select>
+                        </div>
                         <div className="product-info">
                             <div className="category">
                                 <div className="item active">Product Details</div>
