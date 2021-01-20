@@ -192,6 +192,22 @@
             
             .property {
                 margin-top: 25px;
+
+                select {
+                    font-family: Helvetica;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 23px;
+                    color: #000000;
+
+                    margin-right: 20px;
+                    height: 36px;
+                    padding: 0 15px;
+                    background-color: #EFEFEF;
+                    border: none;
+                    border-radius: 5px;
+                }
             }
             
             .product-info {
